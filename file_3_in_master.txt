@@ -1,4 +1,5 @@
 from another source folder (barnch)
 changed this file from another source (brnach)
+added line in new branch to reproduce conflict (new barnch)
 changed this file from another source (master)
 added line in new branch to reproduce conflictadded new line in master to reproduce conflict (master)
