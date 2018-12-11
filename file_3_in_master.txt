@@ -1,3 +1,3 @@
 from another source folder (master)
 changed this file from another source (master)
-added new line in master to reproduce conflict
+added new line in master to reproduce conflict (master)
