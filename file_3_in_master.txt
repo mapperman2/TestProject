@@ -1,2 +1,3 @@
 from another source folder (master)
 changed this file from another source (master)
+added line in new branch to reproduce conflict
