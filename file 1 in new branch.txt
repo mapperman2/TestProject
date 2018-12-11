@@ -1,2 +1,2 @@
-added new branch
-added some text without conflicts
+added new branch (new branch)
+added some text without conflicts (new barnch)
