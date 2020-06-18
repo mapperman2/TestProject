@@ -1,2 +1,0 @@
-new master line
-added new line in branch_test_rebase
