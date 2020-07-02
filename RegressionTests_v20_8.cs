@@ -106,5 +106,13 @@ namespace Aspose.Slides.RegrTests
             string pptxFileName = Path.Combine(RootFolder, "SLIDESNET-41943/SLIDESNET-41943.pptx");
             BitmapComparatorUtils.CheckRenderToPdf(pptxFileName, 1, 0.06,4);
         }
+		
+		[Test(Description = "SLIDESNET-31165 Shadows are not drawing under the chart bubbles")]
+        public void SLIDESNET_31165()
+        {
+            string pptxFileName = Path.Combine(RootFolder, "SLIDESNET-31165/SLIDESNET-31165.pptx");
+            BitmapComparatorUtils.CheckRenderToPng(pptxFileName, 1, 0.06,0,1);
+
+        }
     }
 }
