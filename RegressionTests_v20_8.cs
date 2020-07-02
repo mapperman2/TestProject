@@ -106,5 +106,42 @@ namespace Aspose.Slides.RegrTests
             string pptxFileName = Path.Combine(RootFolder, "SLIDESNET-41943/SLIDESNET-41943.pptx");
             BitmapComparatorUtils.CheckRenderToPdf(pptxFileName, 1, 0.06,4);
         }
+		
+		[Test(Description = "SLIDESNET-40570 Wrong tab widths in SVG")]
+        [Category("ImageMagick")]
+        public void SLIDESNET_40570()
+        {
+            string pptxFileName = Path.Combine(RootFolder, "SLIDESNET-40570/SLIDESNET-40570.pptx");
+            string etalonSvgSlide = Path.Combine(RootFolder, "SLIDESNET-40570/SLIDESNET-40570-svg.png");
+            string etalonVectorSvgSlide = Path.Combine(RootFolder, "SLIDESNET-40570/SLIDESNET-40570-vector-svg.png");
+
+            string outSvgFileName = Path.Combine(TestSettings.TestOutPath, "SLIDESNET-40570-out.svg");
+            string outVectorSvgFileName = Path.Combine(TestSettings.TestOutPath, "SLIDESNET-40570-vector-out.svg");
+
+            using (Presentation pres = new Presentation(pptxFileName))
+            {
+                using (Stream stream = new FileStream(outSvgFileName, FileMode.Create, FileAccess.Write))
+                {
+                    pres.Slides[0].WriteAsSvg(stream);
+
+                    using (Bitmap result = SvgHelpers.RenderSvg(outSvgFileName))
+                    {
+                        BitmapComparatorUtils.CheckBitmap(result, etalonSvgSlide, "SLIDESNET-40570-svg", 1, 0.05);
+                    }
+                }
+
+                using (Stream stream = new FileStream(outVectorSvgFileName, FileMode.Create, FileAccess.Write))
+                {
+                    SVGOptions opts = new SVGOptions { VectorizeText = true, DeletePicturesCroppedAreas = true };
+                    pres.Slides[0].WriteAsSvg(stream, opts);
+
+                    using (Bitmap result = SvgHelpers.RenderSvg(outVectorSvgFileName))
+                    {
+                        BitmapComparatorUtils.CheckBitmap(result, etalonVectorSvgSlide, "SLIDESNET-40570-vector-svg", 1, 0.05);
+                    }
+                }
+            }
+        }
+
     }
 }
