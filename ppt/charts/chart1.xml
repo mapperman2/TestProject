@@ -8,8 +8,8 @@
     <mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
         <mc:Choice Requires="c14"
             xmlns:c14="http://schemas.microsoft.com/office/drawing/2007/8/2/chart"><c14:style
-                val="102"/></mc:Choice>
-        <mc:Fallback><c:style val="2"/></mc:Fallback>
+                val="101"/></mc:Choice>
+        <mc:Fallback><c:style val="1"/></mc:Fallback>
     </mc:AlternateContent>
     <c:chart><c:autoTitleDeleted val="1"/><c:plotArea>
             <c:layout/>
