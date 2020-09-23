@@ -1,0 +1,21 @@
+[user]
+	name = Yurii Tykhonenko
+	email = yurii.tykhonenko@aspose.com
+[credential]
+	helper = manager
+[core]
+	editor = \"C:/Program Files (x86)/notepad++/notepad++.exe\" -multiInst -nosession
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	cmd = \"\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = kdiff3
+[mergetool "kdiff3"]
+	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
