@@ -12,17 +12,45 @@
                 val="102"/></mc:Choice>
         <mc:Fallback><c:style val="2"/></mc:Fallback>
     </mc:AlternateContent>
-    <c:chart><c:autoTitleDeleted val="0"/><c:view3D>
-            <c:rotX val="50"/>
-            <c:rotY val="60"/>
-            <c:depthPercent val="180"/>
-            <c:rAngAx val="1"/>
+    <c:chart><c:title>
+            <c:overlay val="0"/>
+            <c:spPr>
+                <a:noFill/>
+                <a:ln>
+                    <a:noFill/>
+                </a:ln>
+                <a:effectLst/>
+            </c:spPr>
+            <c:txPr>
+                <a:bodyPr rot="0" spcFirstLastPara="1" vertOverflow="ellipsis" vert="horz"
+                    wrap="square" anchor="ctr" anchorCtr="1"/>
+                <a:lstStyle/>
+                <a:p>
+                    <a:pPr>
+                        <a:defRPr sz="1862" b="0" i="0" u="none" strike="noStrike" kern="1200"
+                            spc="0" baseline="0">
+                            <a:solidFill>
+                                <a:schemeClr val="tx1">
+                                    <a:lumMod val="65000"/>
+                                    <a:lumOff val="35000"/>
+                                </a:schemeClr>
+                            </a:solidFill>
+                            <a:latin typeface="+mn-lt"/>
+                            <a:ea typeface="+mn-ea"/>
+                            <a:cs typeface="+mn-cs"/>
+                        </a:defRPr>
+                    </a:pPr>
+                    <a:endParaRPr lang="en-US"/>
+                </a:p>
+            </c:txPr>
+        </c:title><c:autoTitleDeleted val="0"/><c:view3D>
+            <c:rotX val="15"/>
+            <c:rotY val="20"/>
+            <c:rAngAx val="0"/>
         </c:view3D><c:floor>
             <c:thickness val="0"/>
             <c:spPr>
-                <a:solidFill>
-                    <a:srgbClr val="C00000"/>
-                </a:solidFill>
+                <a:noFill/>
                 <a:ln>
                     <a:noFill/>
                 </a:ln>
@@ -32,9 +60,7 @@
         </c:floor><c:sideWall>
             <c:thickness val="0"/>
             <c:spPr>
-                <a:solidFill>
-                    <a:srgbClr val="C00000"/>
-                </a:solidFill>
+                <a:noFill/>
                 <a:ln>
                     <a:noFill/>
                 </a:ln>
@@ -44,9 +70,7 @@
         </c:sideWall><c:backWall>
             <c:thickness val="0"/>
             <c:spPr>
-                <a:solidFill>
-                    <a:srgbClr val="C00000"/>
-                </a:solidFill>
+                <a:noFill/>
                 <a:ln>
                     <a:noFill/>
                 </a:ln>
@@ -121,7 +145,7 @@
                     <c:extLst>
                         <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}"
                             xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
-                            <c16:uniqueId val="{00000000-6212-4CD2-A194-DD9D6B4EDF80}"/>
+                            <c16:uniqueId val="{00000000-CB0D-4D71-8263-7D55F522662B}"/>
                         </c:ext>
                     </c:extLst>
                 </c:ser>
@@ -189,7 +213,75 @@
                     <c:extLst>
                         <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}"
                             xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
-                            <c16:uniqueId val="{00000000-39C9-495F-9847-C4F70ABD28EB}"/>
+                            <c16:uniqueId val="{00000001-CB0D-4D71-8263-7D55F522662B}"/>
+                        </c:ext>
+                    </c:extLst>
+                </c:ser>
+                <c:ser>
+                    <c:idx val="2"/>
+                    <c:order val="2"/>
+                    <c:tx>
+                        <c:strRef>
+                            <c:f>Sheet1!$D$1</c:f>
+                            <c:strCache>
+                                <c:ptCount val="1"/>
+                                <c:pt idx="0">
+                                    <c:v>Series 3</c:v>
+                                </c:pt>
+                            </c:strCache>
+                        </c:strRef>
+                    </c:tx>
+                    <c:spPr>
+                        <a:solidFill>
+                            <a:schemeClr val="accent3"/>
+                        </a:solidFill>
+                        <a:ln/>
+                        <a:effectLst/>
+                        <a:sp3d/>
+                    </c:spPr>
+                    <c:cat>
+                        <c:strRef>
+                            <c:f>Sheet1!$A$2:$A$5</c:f>
+                            <c:strCache>
+                                <c:ptCount val="4"/>
+                                <c:pt idx="0">
+                                    <c:v>Category 1</c:v>
+                                </c:pt>
+                                <c:pt idx="1">
+                                    <c:v>Category 2</c:v>
+                                </c:pt>
+                                <c:pt idx="2">
+                                    <c:v>Category 3</c:v>
+                                </c:pt>
+                                <c:pt idx="3">
+                                    <c:v>Category 4</c:v>
+                                </c:pt>
+                            </c:strCache>
+                        </c:strRef>
+                    </c:cat>
+                    <c:val><c:numRef>
+                            <c:f>Sheet1!$D$2:$D$5</c:f>
+                            <c:numCache>
+                                <c:formatCode>General</c:formatCode>
+                                <c:ptCount val="4"/>
+                                <c:pt idx="0">
+                                    <c:v>2</c:v>
+                                </c:pt>
+                                <c:pt idx="1">
+                                    <c:v>2</c:v>
+                                </c:pt>
+                                <c:pt idx="2">
+                                    <c:v>3</c:v>
+                                </c:pt>
+                                <c:pt idx="3">
+                                    <c:v>5</c:v>
+                                </c:pt>
+                            </c:numCache>
+                        </c:numRef></c:val>
+                    <c:extLst>
+                        <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}"
+                            xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+                            <c16:uniqueId val="{00000002-CB0D-4D71-8263-7D55F522662B}"/>
                         </c:ext>
                     </c:extLst>
                 </c:ser>
@@ -381,12 +473,12 @@
                         </c:spPr>
                     </c:bandFmt>
                 </c:bandFmts>
-                <c:axId val="1937064352"/>
-                <c:axId val="1778198336"/>
-                <c:axId val="13653664"/>
+                <c:axId val="1486828656"/>
+                <c:axId val="1486828240"/>
+                <c:axId val="1482854848"/>
             </c:surface3DChart>
             <c:catAx>
-                <c:axId val="1937064352"/>
+                <c:axId val="1486828656"/>
                 <c:scaling>
                     <c:orientation val="minMax"/>
                 </c:scaling>
@@ -431,7 +523,7 @@
                         <a:endParaRPr lang="en-US"/>
                     </a:p>
                 </c:txPr>
-                <c:crossAx val="1778198336"/>
+                <c:crossAx val="1486828240"/>
                 <c:crosses val="autoZero"/>
                 <c:auto val="1"/>
                 <c:lblAlgn val="ctr"/>
@@ -439,7 +531,7 @@
                 <c:noMultiLvlLbl val="0"/>
             </c:catAx>
             <c:valAx>
-                <c:axId val="1778198336"/>
+                <c:axId val="1486828240"/>
                 <c:scaling>
                     <c:orientation val="minMax"/>
                 </c:scaling>
@@ -492,12 +584,12 @@
                         <a:endParaRPr lang="en-US"/>
                     </a:p>
                 </c:txPr>
-                <c:crossAx val="1937064352"/>
+                <c:crossAx val="1486828656"/>
                 <c:crosses val="autoZero"/>
                 <c:crossBetween val="midCat"/>
             </c:valAx>
             <c:serAx>
-                <c:axId val="13653664"/>
+                <c:axId val="1482854848"/>
                 <c:scaling>
                     <c:orientation val="minMax"/>
                 </c:scaling>
@@ -541,13 +633,11 @@
                         <a:endParaRPr lang="en-US"/>
                     </a:p>
                 </c:txPr>
-                <c:crossAx val="1778198336"/>
+                <c:crossAx val="1486828240"/>
                 <c:crosses val="autoZero"/>
             </c:serAx>
             <c:spPr>
-                <a:solidFill>
-                    <a:srgbClr val="002060"/>
-                </a:solidFill>
+                <a:noFill/>
                 <a:ln>
                     <a:noFill/>
                 </a:ln>
@@ -594,9 +684,7 @@
             </c:ext>
         </c:extLst><c:showDLblsOverMax val="0"/></c:chart>
     <c:spPr>
-        <a:solidFill>
-            <a:srgbClr val="92D050"/>
-        </a:solidFill>
+        <a:noFill/>
         <a:ln>
             <a:noFill/>
         </a:ln>
